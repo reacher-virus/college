@@ -1,0 +1,294 @@
+/* style.css */
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4ff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #002b5c, #0077c8);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  animation: fadeInDown 1s ease-out forwards;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/* Navigation */
+nav {
+  background: #002b5c;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1.5s ease-out;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: linear-gradient(120deg, #002b5c, #0077c8);
+}
+
+nav ul li a:hover {
+  background: #ff0000;
+  transform: scale(1.1);
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url('vitap-campus.jpg') no-repeat center center/cover;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 43, 92, 0.7);
+  animation: fadeIn 2s ease-in;
+}
+
+.hero h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  animation: slideInLeft 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 2s ease;
+}
+
+.cta-button {
+  background-color: #ff3c00;
+  color: white;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.cta-button:hover {
+  background-color: #cc2e00;
+  transform: scale(1.08);
+}
+
+/* Sections */
+.main-content {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.main-content section {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.main-content section:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.main-content h2 {
+  color: #002b5c;
+  margin-bottom: 1.2rem;
+  border-bottom: 3px solid #ff3c00;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.main-content h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0077c8;
+  margin-top: 10px;
+}
+
+.main-content p,
+.main-content a {
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.main-content a:hover {
+  color: #ff3c00;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  animation: fadeInUp 2s ease;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.12);
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #002b5c;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.6rem 0 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0077c8;
+  outline: none;
+}
+
+.contact-form .submit-button {
+  background: #ff3c00;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+  background: #cc2e00;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-content {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+}

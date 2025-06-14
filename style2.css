@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth;
+  background-image: url(https://imgs.search.brave.com/mWqjaNUNm7njVvN86vGyFYRnkCRQ_lNcp7geyrVErfM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9lbW9q/aS5yZWRkaXRtZWRp/YS5jb20vOWM3ampw/N3Z3bTNlMV90NV8z/NGVkd2gvVklULUFQ/X0xvZ28.jpeg); /*  vitap logo image */
+  background-size: cover;
+}
+body {
+  background: #080808;
+  .header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  .header-text h1 span {
+    color: lightsalmon;
+  }
+  margin: 10px 0;
+}
+.tab-content ul li span {
+  color: #b54769;
+  font-size: 14px;
+}
