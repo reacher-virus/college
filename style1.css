@@ -1,294 +1,420 @@
-/* style.css */
+/* style1.css */
 
 /* Base Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4ff;
-  color: #222;
-  line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4ff;
+    color: #222;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: linear-gradient(to right, #002b5c, #0077c8);
-  color: white;
-  text-align: center;
-  padding: 2.5rem 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
-  animation: fadeInDown 1s ease-out forwards;
+    background: linear-gradient(to right, #002b5c, #0077c8);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+    animation: fadeInDown 1s ease-out forwards;
 }
 
 header h1 {
-  font-size: 3rem;
-  letter-spacing: 2px;
-  position: relative;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    position: relative;
 }
 
 /* Navigation */
 nav {
-  background: #002b5c;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  animation: fadeInDown 1.5s ease-out;
+    background: #002b5c;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 1.5s ease-out;
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
 }
 
 nav ul li {
-  margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  background: linear-gradient(120deg, #002b5c, #0077c8);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: linear-gradient(120deg, #002b5c, #0077c8);
 }
 
 nav ul li a:hover {
-  background: #ff0000;
-  transform: scale(1.1);
-  color: white;
+    background: #ff0000;
+    transform: scale(1.1);
+    color: white;
 }
 
 /* Hero Section */
 .hero {
-  background: url('vitap-campus.jpg') no-repeat center center/cover;
-  padding: 6rem 2rem;
-  text-align: center;
-  color: white;
-  background-blend-mode: overlay;
-  background-color: rgba(0, 43, 92, 0.7);
-  animation: fadeIn 2s ease-in;
+    background: url('vitap-campus.jpg') no-repeat center center/cover;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: white;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 43, 92, 0.7);
+    animation: fadeIn 2s ease-in;
 }
 
 .hero h2 {
-  font-size: 3.2rem;
-  margin-bottom: 1rem;
-  animation: slideInLeft 1s ease-out;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    animation: slideInLeft 1s ease-out;
 }
 
 .hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  animation: fadeIn 2s ease;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 2s ease;
 }
 
 .cta-button {
-  background-color: #ff3c00;
-  color: white;
-  padding: 1rem 2.5rem;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: all 0.4s ease;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    background-color: #ff3c00;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
 
 .cta-button:hover {
-  background-color: #cc2e00;
-  transform: scale(1.08);
+    background-color: #cc2e00;
+    transform: scale(1.08);
 }
 
 /* Sections */
 .main-content {
-  padding: 3rem 1rem;
-  max-width: 1100px;
-  margin: auto;
+    padding: 3rem 1rem;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .main-content section {
-  background: white;
-  margin-bottom: 2rem;
-  padding: 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: fadeInUp 1s ease forwards;
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 1s ease forwards;
 }
 
 .main-content section:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-7px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
 }
 
 .main-content h2 {
-  color: #002b5c;
-  margin-bottom: 1.2rem;
-  border-bottom: 3px solid #ff3c00;
-  padding-bottom: 0.5rem;
-  font-size: 2rem;
-  position: relative;
+    color: #002b5c;
+    margin-bottom: 1.2rem;
+    border-bottom: 3px solid #ff3c00;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    position: relative;
 }
 
 .main-content h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: #0077c8;
-  margin-top: 10px;
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #0077c8;
+    margin-top: 10px;
 }
 
 .main-content p,
 .main-content a {
-  color: #444;
-  font-size: 1.05rem;
-  line-height: 1.7;
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 .main-content a:hover {
-  color: #ff3c00;
-  text-decoration: underline;
+    color: #ff3c00;
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background: #002b5c;
-  color: white;
-  text-align: center;
-  padding: 2.5rem 0;
-  margin-top: 4rem;
-  font-size: 0.95rem;
-  animation: fadeInUp 2s ease;
+    background: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+    font-size: 0.95rem;
+    animation: fadeInUp 2s ease;
 }
 
-/* Contact Form */
+/* Contact Form (for other pages if you use this CSS) */
 .contact-form {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 2.5rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.12);
-  animation: fadeInUp 1.5s ease forwards;
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.12);
+    animation: fadeInUp 1.5s ease forwards;
 }
 
 .contact-form label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #002b5c;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #002b5c;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 0.9rem;
-  margin: 0.6rem 0 1.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
+    width: 100%;
+    padding: 0.9rem;
+    margin: 0.6rem 0 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #0077c8;
-  outline: none;
+    border-color: #0077c8;
+    outline: none;
 }
 
 .contact-form .submit-button {
-  background: #ff3c00;
-  color: white;
-  border: none;
-  padding: 0.9rem 2rem;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: background 0.3s ease;
+    background: #ff3c00;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s ease;
 }
 
 .contact-form .submit-button:hover {
-  background: #cc2e00;
+    background: #cc2e00;
 }
 
 /* Animations */
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-80px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Responsive */
+/* --- Responsive Design (New and Modified) --- */
+
+/* Hamburger menu icon styling */
+.menu-toggle {
+    display: none; /* Hidden by default, shown on mobile */
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
+    /* Header adjustments for smaller screens */
+    header h1 {
+        font-size: 2rem; /* Smaller font for header title */
+        padding: 1.5rem 0;
+    }
 
-  .hero h2 {
-    font-size: 2.4rem;
-  }
+    /* Navigation adjustments */
+    nav {
+        display: flex; /* Use flexbox for the nav container */
+        justify-content: space-between; /* Push toggle to one side */
+        align-items: center;
+        padding: 1rem; /* Add some padding around the nav */
+        position: relative; /* For positioning the menu toggle */
+    }
 
-  .hero p {
-    font-size: 1.2rem;
-  }
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        width: 100%; /* Take full width */
+        background: #002b5c; /* Background for dropdown */
+        position: absolute;
+        top: 100%; /* Position below the nav bar */
+        left: 0;
+        display: none; /* Hide by default on mobile */
+        padding: 0; /* Reset padding */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 
-  header h1 {
-    font-size: 2.2rem;
-  }
+    nav ul.active {
+        display: flex; /* Show when active */
+    }
 
-  .main-content {
-    padding: 2rem 1rem;
-  }
+    nav ul li {
+        margin: 0; /* Remove horizontal margin */
+        width: 100%; /* Make each list item full width */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Separator */
+    }
 
-  .contact-form {
-    padding: 2rem;
-  }
+    nav ul li:last-child {
+        border-bottom: none; /* No border on the last item */
+    }
+
+    nav ul li a {
+        display: block; /* Make links take full width of list item */
+        padding: 1rem; /* Adjust padding for better touch targets */
+        text-align: center; /* Center text */
+        background: none; /* Remove gradient background from individual links */
+        border-radius: 0; /* Remove border-radius */
+    }
+
+    nav ul li a:hover {
+        background: #ff0000; /* Hover effect */
+        transform: none; /* Remove scale transform on hover */
+    }
+
+    /* Show the hamburger menu icon */
+    .menu-toggle {
+        display: block; /* Show hamburger icon */
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        padding: 4rem 1rem; /* Less padding on smaller screens */
+    }
+
+    .hero h2 {
+        font-size: 2.2rem; /* Smaller font size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller paragraph font size */
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem; /* Slightly smaller button */
+        font-size: 0.9rem;
+    }
+
+    /* Main content section adjustments */
+    .main-content {
+        padding: 1.5rem 1rem; /* Adjust padding */
+    }
+
+    .main-content section {
+        padding: 1.5rem; /* Less padding inside sections */
+    }
+
+    .main-content h2 {
+        font-size: 1.6rem; /* Smaller heading for sections */
+    }
+
+    .main-content p,
+    .main-content a,
+    .main-content ul li {
+        font-size: 0.95rem; /* Slightly smaller text for readability */
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 1.5rem 1rem; /* Smaller padding */
+        font-size: 0.85rem; /* Smaller font size */
+    }
+
+    /* Contact form adjustments (if used on other pages with this CSS) */
+    .contact-form {
+        padding: 1.5rem; /* Smaller padding for contact form */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem; /* Smaller input fields */
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Even smaller adjustments for very small mobiles */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.85rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.4rem;
+    }
 }
